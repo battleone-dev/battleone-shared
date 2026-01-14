@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us - BattleOne</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="img/logo.png" alt="BattleOne" class="brand-logo" />
+        </a>
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <nav id="primary-nav" class="primary-nav" role="navigation" aria-hidden="true">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-page">
+        <div class="container">
+          <div class="contact-content">
+            <h1 class="contact-title">Contact Us</h1>
+            
+            <div class="contact-email">
+              <span class="email-label">Email :</span>
+              <a href="mailto:contact@battleone.in" class="email-address">contact@battleone.in</a>
+            </div>
+            
+            <form class="contact-form" action="mailto:contact@battleone.in" method="post" enctype="text/plain">
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required />
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required />
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label">Write Message Here</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Type your message here..." rows="6" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary contact-submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer site-footer--simple">
+      <div class="container">
+        <p class="footer-copyright">&copy; 2026 BattleOne. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
